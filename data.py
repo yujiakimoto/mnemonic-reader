@@ -52,4 +52,5 @@ class Dictionary(object):
 
     @staticmethod
     def normalize(token):
+        """Normalizes token to Normal Form Decomposed form (i.e. stripped of special characters)"""
         return unicodedata.normalize('NFD', token)
